@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Eventso.Subscription.Kafka" Version="0.5.0" />
+      <PackageReference Include="Eventso.Subscription.SpanJson" Version="0.5.0" />
+      <PackageReference Include="Eventso.Subscription.Hosting" Version="0.5.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Interview.PaymentExecutor.Application\Interview.PaymentExecutor.Application.csproj" />
+    </ItemGroup>
+
+</Project>

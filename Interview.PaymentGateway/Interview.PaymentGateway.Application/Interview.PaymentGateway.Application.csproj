@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Eventso.Subscription.Abstractions" Version="0.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Payment.Domain.Core\Payment.Domain.Core.csproj" />
+      <ProjectReference Include="..\Interview.PaymentGateway.Domain\Interview.PaymentGateway.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

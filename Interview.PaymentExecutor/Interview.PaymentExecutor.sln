@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interview.PaymentExecutor.Host", "Interview.PaymentExecutor.Host\Interview.PaymentExecutor.Host.csproj", "{82F24448-3FFF-453F-99A3-496C97BDC655}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interview.PaymentExecutor.Application", "Interview.PaymentExecutor.Application\Interview.PaymentExecutor.Application.csproj", "{95791CE9-CE11-4AA8-8980-D3D242C5B4B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Domain.Core", "..\Payment.Domain.Core\Payment.Domain.Core.csproj", "{7A95D8AB-39A3-41BC-AAC7-0AC07613B83A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82F24448-3FFF-453F-99A3-496C97BDC655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F24448-3FFF-453F-99A3-496C97BDC655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F24448-3FFF-453F-99A3-496C97BDC655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F24448-3FFF-453F-99A3-496C97BDC655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95791CE9-CE11-4AA8-8980-D3D242C5B4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95791CE9-CE11-4AA8-8980-D3D242C5B4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95791CE9-CE11-4AA8-8980-D3D242C5B4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95791CE9-CE11-4AA8-8980-D3D242C5B4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A95D8AB-39A3-41BC-AAC7-0AC07613B83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A95D8AB-39A3-41BC-AAC7-0AC07613B83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A95D8AB-39A3-41BC-AAC7-0AC07613B83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A95D8AB-39A3-41BC-AAC7-0AC07613B83A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

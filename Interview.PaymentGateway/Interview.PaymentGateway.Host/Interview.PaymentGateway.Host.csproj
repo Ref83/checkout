@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+      <PackageReference Include="Eventso.Subscription.SpanJson" Version="0.5.0" />
+      <PackageReference Include="Eventso.Subscription.Hosting" Version="0.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Interview.PaymentGateway.Application\Interview.PaymentGateway.Application.csproj" />
+      <ProjectReference Include="..\Interview.PaymentGateway.Postgres\Interview.PaymentGateway.Postgres.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Interview.PaymentGateway.IntegrationTests" />
+    </ItemGroup>    
+    
+</Project>
