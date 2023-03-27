@@ -51,7 +51,7 @@ public sealed class PaymentsHandler :
                     new Expiry(message.Expiry), 
                     new Cvv(message.Cvv), 
                     message.CardHolder),
-                new Money(message.Amount, Convert(message.Currency)),
+                new Money(message.Amount, CurrencyConverter.Convert(message.Currency)),
                 new MerchantId(message.MerchantId), 
                 token);
             
@@ -81,7 +81,7 @@ public sealed class PaymentsHandler :
                     new Expiry(message.Expiry), 
                     new Cvv(message.Cvv), 
                     message.CardHolder),
-                new Money(message.Amount, Convert(message.Currency)),
+                new Money(message.Amount, CurrencyConverter.Convert(message.Currency)),
                 new MerchantId(message.MerchantId), 
                 token));
             
@@ -92,13 +92,5 @@ public sealed class PaymentsHandler :
             _logger.LogError(exception, "Can't handle payment");
             await _deadEndMessageService.Send(message.PaymentId,  exception.Message, token);
         }
-    }
-
-    private static Currency Convert(string code)
-    {
-        if (!Enum.TryParse<Currency>(code, true, out var currency))
-            throw new ArgumentException("Unknown currency: " + code, nameof(code));
-
-        return currency;
     }
 }
